@@ -14,7 +14,7 @@ describe("Select Component", () => {
   });
 
   it("displays a collapse action button", () => {
-    render(<Select selection={["value1", "value2"]} />);
+    render(<Select selection={["value1", "value2"]} />);  
     
     const collapseButton = screen.getByTestId("collapse-button-testid");
     
