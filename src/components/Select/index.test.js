@@ -2,8 +2,8 @@ import { fireEvent, render, screen } from "@testing-library/react";
 import Select from "./index";
 
 describe("Select Component", () => {
-  
-  it("displays a list of choices with a default option 'Toutes'", () => { 
+    
+  it("displays a list of choices with a default option 'Toutes'", () => {
     render(<Select selection={["value1", "value2"]} />);
     
     const selectElement = screen.getByTestId("select-testid");  
