@@ -6,7 +6,7 @@ describe("Select Component", () => {
   it("displays a list of choices with a default option 'Toutes'", () => { 
     render(<Select selection={["value1", "value2"]} />);
     
-    const selectElement = screen.getByTestId("select-testid");
+    const selectElement = screen.getByTestId("select-testid");  
     const defaultOption = screen.getByText("Toutes");
     
     expect(selectElement).toBeInTheDocument();
